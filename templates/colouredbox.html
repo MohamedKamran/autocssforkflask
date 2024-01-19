@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>
+            Coloured Box
+        </title>
+        <style>
+            div{
+                width:600px;
+                height:250px;
+                background-color: bisque;
+                border: solid;
+                border-color: black;
+                margin:20px
+            }
+            p{
+                font-family: arial;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+        <form action="/render/colouredbox" method="post">
+            <div>
+                <br>
+            Enter Background Color:<input type="text" id="color" name="color"></input><br><br>
+            Enter Box Width:<input type="text" id="width" name="width"></input><br><br>
+            Enter Box Height:<input type="text" id="height" name="height"></input><br><br>
+            Enter Box Rounding:<input type="text" id="round" name="round"></input><br><br>
+            Enter Element Name:<input type="text" id="ele" name="ele"></input><br><br>
+            <button type="submit">Generate</button>
+            </div>
+            <br>
+            <br>
+            <div>
+                <h3>{{ ele }} { <br> background-color: {{ color }}<br>width:{{ width }}<br> height: {{ height }}<br> border-radius:{{ round }} <br> }</h3>
+                <p><i>Copy paste this code!</i></p>
+            </div>
+        </center>
+        </form>
+    </body>
+</html>
