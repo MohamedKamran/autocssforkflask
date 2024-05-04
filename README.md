@@ -1,1 +1,19 @@
-this program can be run on any text editor it will generate a predefined css for a box and it will generate the code which reduces the pain to type
+
+# AutoCSS
+
+HOW TO RUN?
+
+install `flask` using the command
+
+```
+pip install flask
+```
+
+And then Run it using
+
+```
+python autocsgen.py
+```
+
+----
+
